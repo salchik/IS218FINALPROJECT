@@ -1,2 +1,3 @@
 # IS218FINAL
-The final for IS218
+This is our IS218 Final
+The people who worked on this were Michael Marut and 
