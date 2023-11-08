@@ -6,14 +6,14 @@ The people who worked on this were Michael Marut and
 
 Each student should put an 'X' under their name on the days they attend class.
 
-## Student Names: | Student 1 | Student 2 | Student 3 |
+## Student Names: | Michael | Sally | Student 3 |
 ------------------|-----------|-----------|-----------|
 
 ### November 2023
 
 | Date        | Student 1 | Student 2 | Student 3 |
 |-------------|-----------|-----------|-----------|
-| Nov 8 (Wed) |           |           |           |
+| Nov 8 (Wed) |           |     X      |           |
 | Nov 10 (Fri)|           |           |           |
 | Nov 15 (Wed)|           |           |           |
 | Nov 17 (Fri)|           |           |           |
