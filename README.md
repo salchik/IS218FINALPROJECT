@@ -2,6 +2,8 @@
 This is our IS218 Final
 The people who worked on this were Michael Marut and Sally Chik
 
+# Links
+
 # Class Sign-In Sheet
 
 Each student should put an 'X' under their name on the days they attend class.
