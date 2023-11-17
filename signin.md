@@ -18,7 +18,7 @@ Each student should put an 'X' under their name on the days they attend class.
 | Nov 8 (Wed) |      X     |     X      |           |
 | Nov 10 (Fri)|       X    |      X     |           |
 | Nov 15 (Wed)|           |       X    |           |
-| Nov 17 (Fri)|           |           |           |
+| Nov 17 (Fri)|           |       X    |           |
 | *Nov 22 (Wed)* |       |           |           |  <!-- Skipped for Thanksgiving -->
 | *Nov 24 (Fri)* |       |           |           |  <!-- Skipped for Thanksgiving -->
 
