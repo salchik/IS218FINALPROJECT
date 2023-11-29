@@ -26,7 +26,7 @@ Each student should put an 'X' under their name on the days they attend class.
 
 | Date        | Student 1 | Student 2 | Student 3 |
 |-------------|-----------|-----------|-----------|
-| Nov 29 (Wed)|           |           |           |
+| Nov 29 (Wed)|           |     X      |           |
 | Dec 1 (Fri) |           |           |           |
 | Dec 6 (Wed) |           |           |           |
 | Dec 8 (Fri) |           |           |           |
