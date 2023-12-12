@@ -12,7 +12,7 @@ export default function Home() {
         backgroundColor: 'saddlebrown',
         height: '30vw'
       }}>
-      <div className='flex flex-col overflow-visible w-4/6 px-10 py-20'>
+      <div className='flex flex-col overflow-visible w-4/6 px-16 py-32'>
         <h1 className=' text-3xl'>
           INDULGE IN CHILEAN FLAVORS
         </h1>
@@ -20,7 +20,7 @@ export default function Home() {
           TRY OUR SANTIAGO CATCH THIS MONTH ONLY
 GET 10% OFF WHEN YOU RESERVE A TABLE
         </h3>
-        <Button className=' w-3/6'>
+        <Button className=' w-1/4'>
           Reserve
         </Button>
       </div>
