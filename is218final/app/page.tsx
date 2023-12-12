@@ -1,20 +1,36 @@
-import Image from 'next/image'
-import {Button} from '@nextui-org/button'; 
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-            <div>
-            <Button>Click me</Button>
-            </div>
-    </main>
+    <div className='min-w-full min-h-full'>
+      <header className='justify-between'>
+        <Navbar className='w-full p-10'>
+            <NavbarContent>
+              <NavbarBrand>
+              <Link href={'/'}>AMOUR DE MER</Link>
+              </NavbarBrand>
+            </NavbarContent>
+            <NavbarContent className='gap-10'>
+              <NavbarItem>
+                <Link href={'/'}>ABOUT</Link>
+              </NavbarItem>
+              <NavbarItem>
+                <Link href={'/menu'}>MENU</Link>
+              </NavbarItem>
+              <NavbarItem>
+                <Link href={'/'}>RESERVE</Link>
+              </NavbarItem>
+            </NavbarContent>
+          </Navbar>
+      </header>
+      <div style={{
+        backgroundImage: `url("/hero.png")`,
+        backgroundSize: 'cover',
+        height: '50vw'
+      }}>
+
+      </div>
+    </div>
   )
 }
