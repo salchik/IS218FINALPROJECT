@@ -30,6 +30,41 @@ export default function Home() {
           </Button>
         </div>
       </div>
+      <div className='w-full py-5'/>
+      <div className=' w-full bg-white py-40'>
+        <div className='text-black'>
+          <h3>
+            words of rapture
+          </h3>
+          <h1>
+          rhapsodies from our beloved patrons
+          </h1>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <div>
+                <h4>
+                “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
+                </h4>
+                <p>
+                  PIERRE AND CHERYL
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                  
+              </div>
+            </li>
+            <li>
+              <div>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
