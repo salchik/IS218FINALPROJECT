@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'roboto': ['Roboto', 'sans-serif']
+      }
     },
   },
   plugins: [nextui()],

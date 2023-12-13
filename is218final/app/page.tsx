@@ -17,10 +17,10 @@ export default function Home() {
           zIndex: '-1'
         }}/>
         <div className='flex flex-col overflow-visible w-4/6 px-16 py-16 z-10 absolute top-52'>
-          <h1 className=' text-3xl'>
+          <h1 className='text-3xl font-playfair'>
             INDULGE IN CHILEAN FLAVORS
           </h1>
-          <h3>
+          <h3 className='font-roboto font-light'>
             TRY OUR SANTIAGO CATCH THIS MONTH ONLY
   GET 10% OFF WHEN YOU RESERVE A TABLE
           </h3>
