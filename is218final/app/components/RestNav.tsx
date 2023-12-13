@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function RestNav() {
     return (
-    <header className='justify-between'>
+    <header className='justify-between font-playfair'>
         <Navbar className='w-full p-10'>
             <NavbarContent>
               <NavbarBrand>

@@ -13,6 +13,9 @@ const config: Config = {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
         'roboto': ['Roboto', 'sans-serif']
+      },
+      colors: {
+        'buttonRed': '#A52323'
       }
     },
   },
