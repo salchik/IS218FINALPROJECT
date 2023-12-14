@@ -1,4 +1,4 @@
-import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/react';
+import { Link, Image, Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/react';
 import React from 'react'
 
 export default function RestFooter() {
@@ -18,13 +18,19 @@ export default function RestFooter() {
                 <Link href={'/menu'}>RESERVE</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link href={'/'}>PRIVACY</Link>
+                <Link href={'/'}>PRIAVACY</Link>
               </NavbarItem>
               <NavbarItem>
                 <Link href={'/'}>PARTNERS</Link>
               </NavbarItem>
             </NavbarContent>
           </Navbar>
+          <Link href='www.facebook.com'>
+            <Image src='/facebookIcon.svg' width={50}/>
+          </Link>
+          <Link href='www.instagram.com'>
+            <Image src='/instagramIcon.svg' width={50}/>
+          </Link>
       </header>
       )
 }
