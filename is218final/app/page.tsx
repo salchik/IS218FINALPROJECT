@@ -25,7 +25,7 @@ export default function Home() {
             GET <span className='font-bold'>10%</span> OFF WHEN YOU RESERVE A TABLE
           </h3>
           <Button className=' w-4/12 text-2xl font-playfair bg-buttonRed py-3 rounded'>
-            Reserve
+            RESERVE
           </Button>
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function Home() {
           <h1 className='text-4xl font-playfair w-3/4'>
             SYMPHONY OF THE SEA
           </h1>
-          <div className='flex justify-between w-full gap-1'>
+          <div className='flex justify-between w-full'>
             <Image 
               className='w-full rounded-xl'
               src='/hero.svg'
@@ -119,9 +119,31 @@ export default function Home() {
               src='/hero.svg'
             />
           </div>
-          <div className='text-end'>
-            <Link href={'/menu'}>View Full Menu</Link>
+          <div className='text-end font-roboto font-light mt-3'>
+            <Link href={'/menu'}>VIEW FULL MENU</Link>
           </div>
+        </div>
+      </div>
+      <div className='relative'>
+        <div className='align-middle justify-center' style={{
+          backgroundImage: `url("/")`,
+          backgroundSize: 'cover',
+          backgroundPositionY: '90%',
+          paddingBottom: '600px',
+          width: '100%',
+          opacity: '.3',
+          zIndex: '-1'
+        }} />
+        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
+          <h1 className='text-6xl font-playfair font-light'>
+            JOIN OUR CULINARY VOYAGE
+          </h1>
+          <h3 className='font-roboto font-light text-lg w-5/12 my-10'>
+            Unlock exclusive offers and savored moments
+          </h3>
+          <Button className=' w-4/12 text-2xl font-playfair bg-transparent border-small border-white py-3 rounded'>
+            Sign Up
+          </Button>
         </div>
       </div>
     </div>
