@@ -148,7 +148,20 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      <div className='w-full bg-white py-56 flex justify-center'>
+      <div className='w-full bg-white py-96 flex justify-center'>
+        <div className=' w-10/12 flex flex-col text-black'>
+          <h1>LOCATIONS &amp; HOURS</h1>
+          <div className='flex flex-wrap'>
+            <div className = 'w-1/2 py-44 rounded-xl' style={{
+              backgroundImage: `url("/landingMap.png")`,
+              backgroundSize: 'cover',
+              backgroundPositionX: '50%'
+            }}/>
+            <div className='flex flex-col'>
+              <h3>ATLANTIC CITY</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
