@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import RestNav from './components/RestNav';
-import { Button } from '@nextui-org/react';
+import { Button, Image } from '@nextui-org/react';
 
 export default function Home() {
   return (
@@ -77,13 +77,13 @@ export default function Home() {
           backgroundImage: `url("/landingAbout.svg")`,
           backgroundSize: 'cover',
           backgroundPositionY: '95%',
-          paddingBottom: '600px',
+          paddingBottom: '700px',
           width: '100%',
           opacity: '.3',
           zIndex: '-1'
         }} />
         <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-10'>
-          <h3 className=' font-roboto font-semibold'>
+          <h3 className=' font-roboto font-semibold mb-5'>
             ABOUT
           </h3>
           <h1 className='text-5xl font-playfair'>
@@ -91,13 +91,37 @@ export default function Home() {
           </h1>
           <h3 className='font-roboto font-light text-lg w-10/12 my-10'>
           In the heart of a bustling coastal town stands an exquisite testament to love and culinary 
-          excellence: "Amour de Mer." <br/> This upscale seafood restaurant is more than just a dining 
+          excellence: "Amour de Mer." <br/> <br/> This upscale seafood restaurant is more than just a dining 
           establishment; it is a sanctuary for lovers, a place where the symphony of ocean waves 
           meets the artistry of gastronomy.
           </h3>
-          <Button className=' w-4/12 text-2xl font-roboto font-light bg-black py-3 rounded'>
+          <Button className=' w-3/12 text-2xl mt-2 font-roboto font-light bg-black py-5 rounded-lg'>
             Learn More
           </Button>
+        </div>
+      </div>
+      <div className='w-full bg-white py-56 flex justify-center'>
+        <div className='text-black w-8/12 flex flex-col'>
+          <h1 className='text-4xl font-playfair w-3/4'>
+            SYMPHONY OF THE SEA
+          </h1>
+          <div className='flex justify-between w-full gap-1'>
+            <Image 
+              className='w-full rounded-xl'
+              src='/hero.svg'
+            />
+            <Image 
+              className='w-full rounded-xl'
+              src='/hero.svg'
+            />
+            <Image 
+              className='w-full rounded-xl'
+              src='/hero.svg'
+            />
+          </div>
+          <div className='text-end'>
+            <Link href={'/menu'}>View Full Menu</Link>
+          </div>
         </div>
       </div>
     </div>
