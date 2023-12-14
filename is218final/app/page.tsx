@@ -74,7 +74,7 @@ export default function Home() {
       </div>
       <div className='relative'>
         <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/landingAbout1.svg")`,
+          backgroundImage: `url("/landingAbout.svg")`,
           backgroundSize: 'cover',
           backgroundPositionY: '95%',
           paddingBottom: '600px',
@@ -82,16 +82,21 @@ export default function Home() {
           opacity: '.3',
           zIndex: '-1'
         }} />
-        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
-          <h1 className='text-8xl font-playfair'>
-            INDULGE IN CHILEAN FLAVORS
-          </h1>
-          <h3 className='font-roboto font-light text-lg w-5/12 my-10'>
-            TRY OUR SANTIAGO CATCH THIS MONTH ONLY
-            GET 10% OFF WHEN YOU RESERVE A TABLE
+        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-10'>
+          <h3 className=' font-roboto font-semibold'>
+            ABOUT
           </h3>
-          <Button className=' w-4/12 text-2xl font-playfair bg-buttonRed py-3 rounded'>
-            Reserve
+          <h1 className='text-5xl font-playfair'>
+          DISCOVER THE ESSENCE BEHIND AMOUR DE MER
+          </h1>
+          <h3 className='font-roboto font-light text-lg w-10/12 my-10'>
+          In the heart of a bustling coastal town stands an exquisite testament to love and culinary 
+          excellence: "Amour de Mer." <br/> This upscale seafood restaurant is more than just a dining 
+          establishment; it is a sanctuary for lovers, a place where the symphony of ocean waves 
+          meets the artistry of gastronomy.
+          </h3>
+          <Button className=' w-4/12 text-2xl font-roboto font-light bg-black py-3 rounded'>
+            Learn More
           </Button>
         </div>
       </div>
