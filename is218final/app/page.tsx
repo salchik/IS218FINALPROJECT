@@ -152,23 +152,23 @@ export default function Home() {
         <div className=' w-10/12 flex flex-col text-black'>
           <h1 className='text-6xl font-playfair mb-16'>LOCATIONS &amp; HOURS</h1>
           <div className='flex flex-wrap'>
-            <div className = 'w-1/2 py-44 rounded-xl' style={{
+            <div className = 'w-1/2 py-60 rounded-xl' style={{
               backgroundImage: `url("/landingMap.png")`,
               backgroundSize: 'cover',
               backgroundPositionX: '50%'
             }}/>
-            <div className='flex flex-col'>
+            <div className='flex flex-col ml-16 gap-y-10'>
               <div>
-                <h3>ATLANTIC CITY</h3>
-                <p>1133 Boardwalk, Atlantic City, NJ 08401 +1 (609) 555-6789</p>
+                <h3 className='text-2xl font-playfair font-semibold'>ATLANTIC CITY</h3>
+                <p className='text-large font-roboto'>1133 Boardwalk, Atlantic City, NJ 08401 +1 (609) 555-6789</p>
               </div>
               <div>
-                <h3>MON - THURS</h3>
-                <p>5:30 PM — 10 PM</p>
+                <h3 className='text-xl font-roboto font-semibold'>MON - THURS</h3>
+                <p className='text-large font-roboto'>5:30 PM — 10 PM</p>
               </div>
               <div>
-                <h3>FRI - SUN</h3>
-                <p>5:30 PM — 12 AM</p>
+                <h3 className='text-xl font-roboto font-semibold'>FRI - SUN</h3>
+                <p className='text-large font-roboto'>5:30 PM — 12 AM</p>
               </div>
             </div>
           </div>
