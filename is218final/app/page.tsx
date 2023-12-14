@@ -32,40 +32,40 @@ export default function Home() {
       <div className='w-full py-5' />
       <div className='w-full bg-white py-40 flex justify-center'>
         <div className='text-black w-full flex flex-col text-center'>
-          <h3>
+          <h3 className=' font-roboto font-semibold text-buttonRed'>
             WORDS OF RAPTURE
           </h3>
           <h1 className='text-6xl font-playfair w-3/4 mx-auto my-5'>
             RHAPSODIES FROM OUR BELOVED PATRONS
           </h1>
-          <ul className='inline-flex justify-center'>
-            <li className='w-1/4 mx-2'>
-              <div className='bg-black font-roboto font-thin text-white px-16 py-14 rounded-xl'>
-                <h4>
+          <ul className='inline-flex justify-center mt-14'>
+            <li className='w-1/4 mx-3'>
+              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+                <h4 className='font-roboto font-thin text-lg mb-4'>
                   “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
                 </h4>
-                <p>
-                  PIERRE AND CHERYL
+                <p className='font-playfair'>
+                  PIERRE &amp; CHERYL
                 </p>
               </div>
             </li>
-            <li className='w-1/4 mx-2'>
-              <div className='bg-black font-roboto font-thin text-white px-16 py-14 rounded-xl'>
-                <h4>
-                  “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
+            <li className='w-1/4 mx-3'>
+              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+                <h4 className='font-roboto font-thin text-lg mb-4'>
+                  “WONDERFULLY DIVINE.”
                 </h4>
-                <p>
-                  PIERRE AND CHERYL
+                <p className='font-playfair'>
+                  STEVE &amp; JERMAINE
                 </p>
               </div>
             </li>
-            <li className='w-1/4 mx-2'>
-              <div className='bg-black font-roboto font-thin text-white px-16 py-14 rounded-xl'>
-                <h4>
-                  “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
+            <li className='w-1/4 mx-3'>
+              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+                <h4 className='font-roboto font-thin text-lg mb-4'>
+                  “THE AMBIANCE INVITED THE FLAMES OF ROMANCE.”
                 </h4>
-                <p>
-                  PIERRE AND CHERYL
+                <p className='font-playfair'>
+                  SARAH &amp; JAMES
                 </p>
               </div>
             </li>
