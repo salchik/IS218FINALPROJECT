@@ -22,7 +22,7 @@ export default function Home() {
           </h1>
           <h3 className='font-roboto font-light text-lg w-5/12 my-10'>
             TRY OUR SANTIAGO CATCH THIS MONTH ONLY
-            GET 10% OFF WHEN YOU RESERVE A TABLE
+            GET <span className='font-bold'>10%</span> OFF WHEN YOU RESERVE A TABLE
           </h3>
           <Button className=' w-4/12 text-2xl font-playfair bg-buttonRed py-3 rounded'>
             Reserve
@@ -70,6 +70,29 @@ export default function Home() {
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className='relative'>
+        <div className='align-middle justify-center' style={{
+          backgroundImage: `url("/landingAbout1.svg")`,
+          backgroundSize: 'cover',
+          backgroundPositionY: '95%',
+          paddingBottom: '600px',
+          width: '100%',
+          opacity: '.3',
+          zIndex: '-1'
+        }} />
+        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
+          <h1 className='text-8xl font-playfair'>
+            INDULGE IN CHILEAN FLAVORS
+          </h1>
+          <h3 className='font-roboto font-light text-lg w-5/12 my-10'>
+            TRY OUR SANTIAGO CATCH THIS MONTH ONLY
+            GET 10% OFF WHEN YOU RESERVE A TABLE
+          </h3>
+          <Button className=' w-4/12 text-2xl font-playfair bg-buttonRed py-3 rounded'>
+            Reserve
+          </Button>
         </div>
       </div>
     </div>
