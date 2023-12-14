@@ -101,23 +101,25 @@ export default function Home() {
         </div>
       </div>
       <div className='w-full bg-white py-56 flex justify-center'>
-        <div className='text-black w-8/12 flex flex-col'>
+        <div className='text-black w-10/12 flex flex-col'>
           <h1 className='text-4xl font-playfair w-3/4'>
             SYMPHONY OF THE SEA
           </h1>
-          <div className='flex justify-between w-full'>
-            <Image 
-              className='w-full rounded-xl'
-              src='/hero.svg'
-            />
-            <Image 
-              className='w-full rounded-xl'
-              src='/hero.svg'
-            />
-            <Image 
-              className='w-full rounded-xl'
-              src='/hero.svg'
-            />
+          <div className='flex gap-3 align-middle w-full'>
+           <div className = 'w-11/12 py-44 rounded-xl' style={{
+            backgroundImage: `url("/landingMenu1.svg")`,
+            backgroundSize: 'cover',
+            backgroundPositionX: '50%'
+           }}/>
+           <div className = 'w-11/12 py-44 rounded-xl' style={{
+            backgroundImage: `url("/landingMenu2.svg")`,
+            backgroundSize: 'cover'
+           }}/>
+            <div className = 'w-11/12 py-44 rounded-xl' style={{
+            backgroundImage: `url("/landingMenu3.svg")`,
+            backgroundSize: 'cover',
+            backgroundPositionY: '30%'
+           }}/>
           </div>
           <div className='text-end font-roboto font-light mt-3'>
             <Link href={'/menu'}>VIEW FULL MENU</Link>
