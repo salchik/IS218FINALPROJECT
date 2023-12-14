@@ -148,9 +148,9 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      <div className='w-full bg-white py-96 flex justify-center'>
+      <div className='w-full bg-white py-40 flex justify-center'>
         <div className=' w-10/12 flex flex-col text-black'>
-          <h1>LOCATIONS &amp; HOURS</h1>
+          <h1 className='text-6xl font-playfair mb-16'>LOCATIONS &amp; HOURS</h1>
           <div className='flex flex-wrap'>
             <div className = 'w-1/2 py-44 rounded-xl' style={{
               backgroundImage: `url("/landingMap.png")`,
@@ -158,7 +158,18 @@ export default function Home() {
               backgroundPositionX: '50%'
             }}/>
             <div className='flex flex-col'>
-              <h3>ATLANTIC CITY</h3>
+              <div>
+                <h3>ATLANTIC CITY</h3>
+                <p>1133 Boardwalk, Atlantic City, NJ 08401 +1 (609) 555-6789</p>
+              </div>
+              <div>
+                <h3>MON - THURS</h3>
+                <p>5:30 PM — 10 PM</p>
+              </div>
+              <div>
+                <h3>FRI - SUN</h3>
+                <p>5:30 PM — 12 AM</p>
+              </div>
             </div>
           </div>
         </div>
