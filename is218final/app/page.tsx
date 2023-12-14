@@ -128,15 +128,15 @@ export default function Home() {
       </div>
       <div className='relative'>
         <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/")`,
+          backgroundImage: `url("/landingSignUp.svg")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
-          paddingBottom: '600px',
+          paddingBottom: '700px',
           width: '100%',
           opacity: '.3',
           zIndex: '-1'
         }} />
-        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
+        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-40'>
           <h1 className='text-6xl font-playfair font-light'>
             JOIN OUR CULINARY VOYAGE
           </h1>
@@ -147,6 +147,8 @@ export default function Home() {
             Sign Up
           </Button>
         </div>
+      </div>
+      <div className='w-full bg-white py-56 flex justify-center'>
       </div>
     </div>
   )
