@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import RestNav from './components/RestNav';
 import { Button, Image } from '@nextui-org/react';
+import RestFooter from './components/RestFooter';
 
 export default function Home() {
   return (
@@ -174,6 +175,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <RestFooter/>
     </div>
   )
 }
