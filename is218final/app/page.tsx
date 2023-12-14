@@ -25,7 +25,6 @@ export default function Home() {
             GET 10% OFF WHEN YOU RESERVE A TABLE
           </h3>
           <Button className=' w-4/12 text-2xl font-playfair bg-buttonRed py-3 rounded'>
-            {/* #A52323 */}
             Reserve
           </Button>
         </div>
@@ -34,14 +33,14 @@ export default function Home() {
       <div className='w-full bg-white py-40 flex justify-center'>
         <div className='text-black w-full flex flex-col text-center'>
           <h3>
-            words of rapture
+            WORDS OF RAPTURE
           </h3>
-          <h1>
-            rhapsodies from our beloved patrons
+          <h1 className='text-6xl font-playfair w-3/4 mx-auto my-5'>
+            RHAPSODIES FROM OUR BELOVED PATRONS
           </h1>
           <ul className='inline-flex justify-center'>
-            <li className='w-1/4'>
-              <div>
+            <li className='w-1/4 mx-2'>
+              <div className='bg-black font-roboto font-thin text-white px-16 py-14 rounded-xl'>
                 <h4>
                   “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
                 </h4>
@@ -50,8 +49,8 @@ export default function Home() {
                 </p>
               </div>
             </li>
-            <li className='w-1/4'>
-              <div>
+            <li className='w-1/4 mx-2'>
+              <div className='bg-black font-roboto font-thin text-white px-16 py-14 rounded-xl'>
                 <h4>
                   “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
                 </h4>
@@ -60,8 +59,8 @@ export default function Home() {
                 </p>
               </div>
             </li>
-            <li className='w-1/4'>
-              <div>
+            <li className='w-1/4 mx-2'>
+              <div className='bg-black font-roboto font-thin text-white px-16 py-14 rounded-xl'>
                 <h4>
                   “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
                 </h4>
