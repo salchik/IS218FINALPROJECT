@@ -1,4 +1,4 @@
-import { Button, Input, Select, SelectItem } from "@nextui-org/react";
+import { Button, Input } from "@nextui-org/react";
 import RestNav from "../components/RestNav";
 import RestFooter from "../components/RestFooter";
 
