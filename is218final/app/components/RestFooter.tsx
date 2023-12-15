@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function RestFooter() {
     return (
-    <header className='justify-between font-playfair'>
+    <footer className='justify-between font-playfair'>
         <Navbar className='w-full p-10'>
             <NavbarContent>
               <NavbarBrand>
@@ -33,6 +33,6 @@ export default function RestFooter() {
                 <Image src='/instagramIcon.svg' width={50}/>
             </a>
           </div>
-      </header>
+      </footer>
       )
 }
