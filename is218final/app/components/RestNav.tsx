@@ -4,13 +4,13 @@ import React from 'react'
 export default function RestNav() {
     return (
     <header className='justify-between font-playfair'>
-        <Navbar className='w-full p-10'>
+        <Navbar className='w-full p-10 bg-black'>
             <NavbarContent>
               <NavbarBrand>
-              <Link href={'/'}>AMOUR DE MER</Link>
+              <Link color='secondary' href={'/'}>AMOUR DE MER</Link>
               </NavbarBrand>
             </NavbarContent>
-            <NavbarContent className='gap-10'>
+            <NavbarContent className='gap-10' justify='end'>
               <NavbarItem>
                 <Link href={'/about'}>ABOUT</Link>
               </NavbarItem>
