@@ -4,24 +4,24 @@ import React from 'react'
 export default function RestFooter() {
     return (
     <footer className='justify-between font-playfair'>
-        <Navbar className='w-full p-10'>
+        <Navbar className='w-full p-10 bg-black'>
             <NavbarContent>
               <NavbarBrand>
-              <Link href={'/'}>AMOUR DE MER</Link>
+              <Link color='secondary' href={'/'}>AMOUR DE MER</Link>
               </NavbarBrand>
             </NavbarContent>
-            <NavbarContent className='gap-10'>
+            <NavbarContent className='gap-10' justify='end'>
               <NavbarItem>
-                <Link href={'/'}>CONTACT</Link>
+                <Link color='secondary' href={'/contact'}>CONTACT</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link href={'/menu'}>RESERVE</Link>
+                <Link color='secondary' href={'/reservation'}>RESERVE</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link href={'/'}>PRIAVACY</Link>
+                <Link color='secondary' href={'/privacy'}>PRIVACY</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link href={'/'}>PARTNERS</Link>
+                <Link color='secondary' href={'/privacy'}>PARTNERS</Link>
               </NavbarItem>
             </NavbarContent>
           </Navbar>

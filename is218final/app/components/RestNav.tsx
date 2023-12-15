@@ -12,13 +12,13 @@ export default function RestNav() {
             </NavbarContent>
             <NavbarContent className='gap-10' justify='end'>
               <NavbarItem>
-                <Link href={'/about'}>ABOUT</Link>
+                <Link color='secondary' href={'/about'}>ABOUT</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link href={'/menu'}>MENU</Link>
+                <Link color='secondary' href={'/menu'}>MENU</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link href={'/reservation'}>RESERVE</Link>
+                <Link color='secondary' href={'/reservation'}>RESERVE</Link>
               </NavbarItem>
             </NavbarContent>
           </Navbar>
