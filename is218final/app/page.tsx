@@ -23,9 +23,9 @@ export default function Home() {
           </h1>
           <h3 className='font-roboto font-light text-lg w-5/12 my-10'>
             TRY OUR SANTIAGO CATCH THIS MONTH ONLY
-            GET <span className='font-bold'>10%</span> OFF WHEN YOU RESERVE A TABLE
+            GET 10% OFF WHEN YOU RESERVE A TABLE
           </h3>
-          <Button className=' w-4/12 text-2xl font-playfair bg-buttonRed py-3 rounded'>
+          <Button color='secondary' className=' w-4/12 text-2xl font-playfair bg-buttonRed py-10 rounded'>
             RESERVE
           </Button>
         </div>
@@ -88,15 +88,15 @@ export default function Home() {
             ABOUT
           </h3>
           <h1 className='text-5xl font-playfair'>
-          DISCOVER THE ESSENCE BEHIND AMOUR DE MER
+          DISCOVER THE ESSENCE BEHIND <br/> AMOUR DE MER
           </h1>
-          <h3 className='font-roboto font-light text-lg w-10/12 my-10'>
+          <h3 className='font-roboto font-light text-xl w-10/12 my-10'>
           In the heart of a bustling coastal town stands an exquisite testament to love and culinary 
           excellence: "Amour de Mer." <br/> <br/> This upscale seafood restaurant is more than just a dining 
           establishment; it is a sanctuary for lovers, a place where the symphony of ocean waves 
           meets the artistry of gastronomy.
           </h3>
-          <Button className=' w-3/12 text-2xl mt-2 font-roboto font-light bg-black py-5 rounded-lg'>
+          <Button color='secondary' className=' w-3/12 text-2xl mt-2 font-roboto font-light bg-black py-7 rounded-lg'>
             Learn More
           </Button>
         </div>
@@ -144,8 +144,8 @@ export default function Home() {
           <h3 className='font-roboto font-light text-lg w-5/12 my-10'>
             Unlock exclusive offers and savored moments
           </h3>
-          <Button className=' w-4/12 text-2xl font-playfair bg-transparent border-small border-white py-3 rounded'>
-            Sign Up
+          <Button color='secondary' className=' w-4/12 text-2xl font-roboto bg-transparent border-small border-white py-10 rounded'>
+            SIGN UP
           </Button>
         </div>
       </div>
@@ -158,7 +158,7 @@ export default function Home() {
               backgroundSize: 'cover',
               backgroundPositionX: '50%'
             }}/>
-            <div className='flex flex-col ml-16 gap-y-10'>
+            <div className='flex flex-col ml-16 gap-y-10 w-1/3'>
               <div>
                 <h3 className='text-2xl font-playfair font-semibold'>ATLANTIC CITY</h3>
                 <p className='text-large font-roboto'>1133 Boardwalk, Atlantic City, NJ 08401 +1 (609) 555-6789</p>
