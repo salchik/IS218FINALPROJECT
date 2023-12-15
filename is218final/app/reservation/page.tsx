@@ -1,6 +1,16 @@
-import { Button, Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Input } from "@nextui-org/react";
+import { Button, Input, Select, SelectItem } from "@nextui-org/react";
 import RestNav from "../components/RestNav";
 import RestFooter from "../components/RestFooter";
+
+const selectGuests = [{ label: '1', value: "1" },
+{ label: '2', value: "2" },
+{ label: '3', value: "3" },
+{ label: '4', value: "4" },
+{ label: '5', value: "5" },
+{ label: '6', value: "6" },
+{ label: '7', value: "7" },
+{ label: '8', value: "8" },
+{ label: '9', value: "9" },]
 
 export default function Reservation() {
     return (
@@ -18,7 +28,7 @@ export default function Reservation() {
                 }} />
             </div>
             <div className='w-full py-5' />
-            <div className='w-full bg-white py-40 flex justify-center'>
+            <div className='w-full bg-white py-20 flex justify-center'>
                 <div className='text-black flex flex-col text-left w-3/4'>
                     <h4 className=' font-roboto font-semibold'>
                         MAKE A
@@ -30,27 +40,16 @@ export default function Reservation() {
                         Walk-Ins allowed, but it is highly recommended to make a reservation at Amour de Mer. <br /> <br />
                         For any concerns, please contact at <br /><br />+1 (609) 555-6789 <br /> reservations@amourdemer.com
                     </p>
-                    <div className="w-2/3">
-                        <div className="w-full flex-row">
-                            <Input className="w-4/12" type="text" label={'Your First Name'} />
-                            <Input className="w-4/12" type="text" label={'Your Last Name'} />
+                    <div className="w-2/4 mt-10">
+                        <div className="flex flex-row gap-3">
+                            <Input className="w-6/12" type="text" label={'Your First Name'} />
+                            <Input className="w-6/12" type="text" label={'Your Last Name'} />
                         </div>
-                        <Input className="w-5/12" type="email" label={'Your Email'} />
-                        <Dropdown>
-                            <DropdownTrigger>
-                                <Button className=" bg-buttonRed"
-                                    variant="solid"
-                                >
-                                    SELECT PARTY SIZE 
-                                </Button>
-                            </DropdownTrigger>
-                            <DropdownMenu>
-                                <DropdownItem key="1">1</DropdownItem>
-                                <DropdownItem key="2">2</DropdownItem>
-                                <DropdownItem key="3">3</DropdownItem>
-                                <DropdownItem key="4">4</DropdownItem>
-                            </DropdownMenu>
-                        </Dropdown>
+                        <Input className="w-full mt-10" type="email" label={'Your Email'} />
+                        <Input className="w-full mt-10" type="text" label={'Amount of Guests'} />
+                        <Button color='secondary' className=' w-full text-2xl my-14 font-roboto font-light bg-black py-7 rounded-lg'>
+                            RESERVE
+                        </Button>
                     </div>
                 </div>
             </div>

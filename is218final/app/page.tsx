@@ -26,7 +26,7 @@ export default function Home() {
             GET 10% OFF WHEN YOU RESERVE A TABLE
           </h3>
           <Button color='secondary' className=' w-4/12 text-2xl font-playfair bg-buttonRed py-10 rounded'>
-            RESERVE
+            <Link href={'/reservation'}>RESERVE</Link>
           </Button>
         </div>
       </div>

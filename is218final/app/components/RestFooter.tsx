@@ -11,17 +11,17 @@ export default function RestFooter() {
               </NavbarBrand>
             </NavbarContent>
             <NavbarContent className='gap-10' justify='end'>
+            <NavbarItem>
+                <Link color='secondary' href={'/about'}>ABOUT</Link>
+              </NavbarItem>
               <NavbarItem>
-                <Link color='secondary' href={'/contact'}>CONTACT</Link>
+                <Link color='secondary' href={'/menu'}>MENU</Link>
               </NavbarItem>
               <NavbarItem>
                 <Link color='secondary' href={'/reservation'}>RESERVE</Link>
               </NavbarItem>
               <NavbarItem>
                 <Link color='secondary' href={'/privacy'}>PRIVACY</Link>
-              </NavbarItem>
-              <NavbarItem>
-                <Link color='secondary' href={'/privacy'}>PARTNERS</Link>
               </NavbarItem>
             </NavbarContent>
           </Navbar>

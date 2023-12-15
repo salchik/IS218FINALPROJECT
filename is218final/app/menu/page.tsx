@@ -4,7 +4,7 @@ import RestFooter from "../components/RestFooter";
 
 export default function Menu() {
     return (
-      <div className="flex min-h-screen">
+      <div className="min-w-screen min-h-screen">
         <RestNav/>
         <RestFooter/>
       </div>
