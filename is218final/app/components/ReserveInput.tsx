@@ -3,6 +3,12 @@ import { Button, Input } from '@nextui-org/react'
 import { useRef } from 'react'
 
 export default function ReserveInput() {
+    const inputRef = useRef(null)
+    const subscribeUser = async (e: any) => {
+        e.preventDefault()
+
+        const res = fetch('/api')
+    } 
     return (
         <div className="w-2/4 mt-10">
         <div className="flex flex-row gap-3">
