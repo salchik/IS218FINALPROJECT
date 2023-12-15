@@ -40,17 +40,6 @@ export default function Reservation() {
                         Walk-Ins allowed, but it is highly recommended to make a reservation at Amour de Mer. <br /> <br />
                         For any concerns, please contact at <br /><br />+1 (609) 555-6789 <br /> reservations@amourdemer.com
                     </p>
-                    <div className="w-2/4 mt-10">
-                        <div className="flex flex-row gap-3">
-                            <Input className="w-6/12" type="text" label={'Your First Name'} />
-                            <Input className="w-6/12" type="text" label={'Your Last Name'} />
-                        </div>
-                        <Input className="w-full mt-10" type="email" label={'Your Email'} />
-                        <Input className="w-full mt-10" type="text" label={'Amount of Guests'} />
-                        <Button color='secondary' className=' w-full text-2xl my-14 font-roboto font-light bg-black py-7 rounded-lg'>
-                            RESERVE
-                        </Button>
-                    </div>
                 </div>
             </div>
             <RestFooter />
