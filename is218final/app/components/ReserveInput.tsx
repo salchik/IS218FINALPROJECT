@@ -3,7 +3,7 @@ import { Button, Input } from '@nextui-org/react'
 import { ChangeEvent, useState } from 'react'
 
 const mailchimpFactory = require("@mailchimp/mailchimp_transactional/src/index.js");
-const mailchimp = mailchimpFactory(process.env.MANDRIL_API_KEY);
+const mailchimp = mailchimpFactory("md-uqClTbx6RKt6LBmhLwiBRg");
 
 
 export default function ReserveInput() {
@@ -11,7 +11,7 @@ export default function ReserveInput() {
         firstName: '',
         lastName: '',
         email: '',
-        guestAmount: ''
+        guestNum: ''
     });
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name , value } = e.currentTarget;
@@ -21,14 +21,25 @@ export default function ReserveInput() {
     }
     const subscribeUser = async (e: any) => {
         e.preventDefault()
-        let response = 'default'
+        const message = {
+            
+            from_email: "sc399@njit.edu",
+            subject: "Reservation",
+            text: "Hello " + formData.firstName + " " + formData.lastName + " your reservation is set for " + formData.guestNum,
+            to: [
+              {
+                email: formData.email,
+                type: "to"
+              }
+            ]
+          };
         try {
-            // const response = await mailchimp.messages.send({
-            //     message
-            //   });
+            const response = await mailchimp.messages.send({
+                message
+            });
         }
         catch (e) {
-            let response = e
+            console.log(e)
         }
 
         // const res = fetch('/api',
@@ -48,11 +59,11 @@ export default function ReserveInput() {
     return (
         <div className="w-2/4 mt-10">
             <div className="flex flex-row gap-3">
-                <Input id='firstName' className="w-6/12" type="text" onChange={handleInputChange} label={'Your First Name'} />
-                <Input id='firstName' className="w-6/12" type="text" onChange={handleInputChange} label={'Your Last Name'} />
+                <Input name='firstName' className="w-6/12" type="text" onChange={handleInputChange} label={'Your First Name'} />
+                <Input name='lastName' className="w-6/12" type="text" onChange={handleInputChange} label={'Your Last Name'} />
             </div>
-            <Input id='firstName' className="w-full mt-10" type="email" onChange={handleInputChange} label={'Your Email'} />
-            <Input id='firstName' className="w-full mt-10" type="number" onChange={handleInputChange} label={'Amount of Guests'} />
+            <Input name='email' className="w-full mt-10" type="email" onChange={handleInputChange} label={'Your Email'} />
+            <Input name='guestNum' className="w-full mt-10" type="number" onChange={handleInputChange} label={'Amount of Guests'} />
             <Button color='secondary' className=' w-full text-2xl my-14 font-roboto font-light bg-black py-7 rounded-lg' onClick={subscribeUser}>
                 RESERVE
             </Button>
