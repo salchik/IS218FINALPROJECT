@@ -26,7 +26,7 @@ export default function ReserveInput() {
 
                 method: 'POST',
             });
-        console.log((await res).status)
+        console.log((await res).statusText)
     };
     return (
         <div className="w-2/4 mt-10">
