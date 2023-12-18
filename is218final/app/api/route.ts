@@ -13,14 +13,13 @@ export async function POST(req: Request, res: Response){
   
   
     try {
-      const AUDIENCE_ID = process.env.AUDIENCE_ID;
       const API_KEY = process.env.API_KEY;
       const DATACENTER = process.env.API_SERVER;
+      const AUDIENCE_ID = process.env.AUDIENCE_ID;
       const data = {
         email_address: emailString,
         status: 'subscribed',
       };
-  
       const response = await fetch(
         `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`,
         {
