@@ -31,8 +31,7 @@ export async function POST(req: Request, res: Response){
           method: 'POST',
         }
       );
-      console.log(data)
-      res = Response.json('Everything went through!')
+      res = response
       return res;
     } catch (error) {
       res = Response.json({ error: 'Something went wrong, not email!' })

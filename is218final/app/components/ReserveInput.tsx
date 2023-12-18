@@ -36,7 +36,7 @@ export default function ReserveInput() {
             const response = await mailchimp.messages.send({
                 message
             });
-           console.log((await response).status)
+           console.log(response.status)
         }
         catch (e) {
             console.log(e)
