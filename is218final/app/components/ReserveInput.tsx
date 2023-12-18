@@ -2,9 +2,7 @@
 import { Button, Input } from '@nextui-org/react'
 import { ChangeEvent, useState } from 'react'
 
-const mailchimpFactory = require("@mailchimp/mailchimp_transactional/src/index.js");
-const mailchimp = mailchimpFactory("md-uqClTbx6RKt6LBmhLwiBRg");
-
+const mailchimp = require('@mailchimp/mailchimp_transactional')('md-uqClTbx6RKt6LBmhLwiBRg');
 
 export default function ReserveInput() {
     const [formData, setFormData] = useState({
