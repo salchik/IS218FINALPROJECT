@@ -145,7 +145,7 @@ export default function Home() {
             Unlock exclusive offers and savored moments
           </h3>
           <Button color='secondary' className=' w-4/12 text-2xl font-roboto bg-transparent border-small border-white py-10 rounded'>
-            SIGN UP
+            <Link color='secondary' href={'/signUp'}>SIGN UP</Link>
           </Button>
         </div>
       </div>

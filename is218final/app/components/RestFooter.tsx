@@ -20,9 +20,6 @@ export default function RestFooter() {
               <NavbarItem>
                 <Link color='secondary' href={'/reservation'}>RESERVE</Link>
               </NavbarItem>
-              <NavbarItem>
-                <Link color='secondary' href={'/privacy'}>PRIVACY</Link>
-              </NavbarItem>
             </NavbarContent>
           </Navbar>
           <div className='flex justify-center gap-10 pb-10'>
