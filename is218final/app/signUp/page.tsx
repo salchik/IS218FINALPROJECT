@@ -1,7 +1,6 @@
-import { Button, Input } from "@nextui-org/react";
 import RestNav from "../components/RestNav";
 import RestFooter from "../components/RestFooter";
-import ReserveInput from "../components/ReserveInput";
+import SignUpInput from "../components/SignUpInput";
 
 export default function Reservation() {
     return (
@@ -22,16 +21,16 @@ export default function Reservation() {
             <div className='w-full bg-white py-20 flex justify-center'>
                 <div className='text-black flex flex-col text-left w-3/4'>
                     <h4 className=' font-roboto font-semibold'>
-                        MAKE A
+                        SIGN UP
                     </h4>
                     <h1 className='text-6xl font-playfair my-5'>
-                        RESERVATION
+                        JOIN THE CLUB
                     </h1>
                     <p>
-                        Walk-Ins allowed, but it is highly recommended to make a reservation at Amour de Mer. <br /> <br />
-                        For any concerns, please contact at <br /><br />+1 (609) 555-6789 <br /> reservations@amourdemer.com
+                        Receive intimate details about our seasonal menus and limited-time culinary delights.
+                        Not to mention gain early reservations for our enchanting themed dinners and intimate couple's events.
                     </p>
-                    <ReserveInput/>
+                    <SignUpInput />
                 </div>
             </div>
             <RestFooter />
