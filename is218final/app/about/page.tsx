@@ -8,7 +8,7 @@ export default function About() {
       <RestNav />
       <div className="relative w-full">
         <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/signUpImage.svg")`,
+          backgroundImage: `url("/aboutImage.svg")`,
           backgroundSize: 'cover',
           backgroundPositionY: '70%',
           paddingBottom: '700px',
