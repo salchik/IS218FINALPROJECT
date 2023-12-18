@@ -11,10 +11,11 @@ export async function POST(req: Request, res: Response){
     const emailJSON = JSON.parse(inputEmail)
     const emailString = emailJSON['input_email']
   
+  
     try {
       const AUDIENCE_ID = process.env.AUDIENCE_ID;
-      const API_KEY = process.env.MAILCHIMP_API_KEY;
-      const DATACENTER = process.env.MAILCHIMP_API_SERVER;
+      const API_KEY = process.env.API_KEY;
+      const DATACENTER = process.env.API_SERVER;
       const data = {
         email_address: emailString,
         status: 'subscribed',
@@ -31,11 +32,11 @@ export async function POST(req: Request, res: Response){
           method: 'POST',
         }
       );
-      console.log(data)
       console.log(response.statusText)
-      res = Response.json('Everything went through!')
+      res = response
       return res;
     } catch (error) {
+      console.log(error)
       res = Response.json({ error: 'Something went wrong, not email!' })
       return res;
     }
