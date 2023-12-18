@@ -12,9 +12,9 @@ export async function POST(req: Request, res: Response){
     const emailString = emailJSON['input_email']
   
     try {
-      const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID;
-      const API_KEY = process.env.MAILCHIMP_API_KEY;
-      const DATACENTER = process.env.MAILCHIMP_API_SERVER;
+      const AUDIENCE_ID = "4fcff409b4";
+      const API_KEY ="788015d30aca46e23d38da4f3404aa1e-us21";
+      const DATACENTER = "us21";
       const data = {
         email_address: emailString,
         status: 'subscribed',
@@ -31,7 +31,6 @@ export async function POST(req: Request, res: Response){
           method: 'POST',
         }
       );
-      console.log(data)
       res = Response.json('Everything went through!')
       return res;
     } catch (error) {

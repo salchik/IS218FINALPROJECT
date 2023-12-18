@@ -4,7 +4,9 @@ import { ChangeEvent, useState } from 'react'
 
 export default function ReserveInput() {
     const [formData, setFormData] = useState({
-        email: ''
+        email: '',
+        firstName: '',
+        lastName: ''
     });
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name , value } = e.currentTarget;
@@ -17,8 +19,7 @@ export default function ReserveInput() {
         const res = fetch('/api',
             {
                 body: JSON.stringify({
-                    //inputRef.current.value
-                    'input_email': formData
+                    'input_email': formData.email
                 }),
 
                 headers: {
@@ -27,6 +28,7 @@ export default function ReserveInput() {
 
                 method: 'POST',
             });
+        console.log((await res).status)
     };
     return (
         <div className="w-2/4 mt-10">
