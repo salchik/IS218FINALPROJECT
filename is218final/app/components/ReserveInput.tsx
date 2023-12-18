@@ -2,7 +2,9 @@
 import { Button, Input } from '@nextui-org/react'
 import { ChangeEvent, useState } from 'react'
 
-const mailchimp = require('@mailchimp/mailchimp_transactional')('md-uqClTbx6RKt6LBmhLwiBRg');
+const MANDRIL_API = process.env.MANDRIL_API_KEY;
+console.log(`${MANDRIL_API}`)
+const mailchimp = require('@mailchimp/mailchimp_transactional')(`${MANDRIL_API}`);
 
 export default function ReserveInput() {
     const [formData, setFormData] = useState({
@@ -35,25 +37,11 @@ export default function ReserveInput() {
             const response = await mailchimp.messages.send({
                 message
             });
-            console.log((await response).status)
+           // console.log((await response).status)
         }
         catch (e) {
             console.log(e)
         }
-
-        // const res = fetch('/api',
-        //     {
-        //         body: JSON.stringify({
-        //             //inputRef.current.value
-        //             'input_email': testData
-        //         }),
-
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-
-        //         method: 'POST',
-        //     });
     };
     return (
         <div className="w-2/4 mt-10">

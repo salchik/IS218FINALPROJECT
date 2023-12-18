@@ -4,9 +4,7 @@ import { ChangeEvent, useState } from 'react'
 
 export default function ReserveInput() {
     const [formData, setFormData] = useState({
-        email: '',
-        firstName: '',
-        lastName: ''
+        email: ''
     });
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name , value } = e.currentTarget;

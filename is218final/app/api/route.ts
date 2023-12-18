@@ -12,9 +12,9 @@ export async function POST(req: Request, res: Response){
     const emailString = emailJSON['input_email']
   
     try {
-      const AUDIENCE_ID = "4fcff409b4";
-      const API_KEY ="788015d30aca46e23d38da4f3404aa1e-us21";
-      const DATACENTER = "us21";
+      const AUDIENCE_ID = process.env.AUDIENCE_ID;
+      const API_KEY = process.env.API_KEY;
+      const DATACENTER = process.env.API_SERVER;
       const data = {
         email_address: emailString,
         status: 'subscribed',
@@ -31,6 +31,7 @@ export async function POST(req: Request, res: Response){
           method: 'POST',
         }
       );
+      console.log(data)
       res = Response.json('Everything went through!')
       return res;
     } catch (error) {
