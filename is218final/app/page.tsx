@@ -97,7 +97,7 @@ export default function Home() {
           meets the artistry of gastronomy.
           </h3>
           <Button color='secondary' className=' w-3/12 text-2xl mt-2 font-roboto font-light bg-black py-7 rounded-lg'>
-            Learn More
+            <Link color='secondary' href={'/about'}>LEARN MORE</Link>
           </Button>
         </div>
       </div>
@@ -145,7 +145,7 @@ export default function Home() {
             Unlock exclusive offers and savored moments
           </h3>
           <Button color='secondary' className=' w-4/12 text-2xl font-roboto bg-transparent border-small border-white py-10 rounded'>
-            <Link color='secondary' href={'/signUp'}>SIGN UP</Link>
+            <Link title='signUp' color='secondary' href={'/signUp'}>SIGN UP</Link>
           </Button>
         </div>
       </div>
