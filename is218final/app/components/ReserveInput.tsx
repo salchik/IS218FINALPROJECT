@@ -3,7 +3,6 @@ import { Button, Input } from '@nextui-org/react'
 import { ChangeEvent, useState } from 'react'
 
 const MANDRIL_API = process.env.NEXT_PUBLIC_MANDRIL_API_KEY;
-console.log(`${MANDRIL_API}`)
 const mailchimp = require('@mailchimp/mailchimp_transactional')(`${MANDRIL_API}`);
 
 export default function ReserveInput() {
