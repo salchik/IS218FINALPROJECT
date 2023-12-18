@@ -1,4 +1,5 @@
 
+
 export async function POST(req: Request, res: Response){
     const buffer = await req.arrayBuffer()
     const inputEmail = new TextDecoder('utf-8').decode(buffer)
