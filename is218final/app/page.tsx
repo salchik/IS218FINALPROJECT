@@ -92,7 +92,7 @@ export default function Home() {
           </h1>
           <h3 className='font-roboto font-light text-xl w-10/12 my-10'>
           In the heart of a bustling coastal town stands an exquisite testament to love and culinary 
-          excellence: "Amour de Mer." <br/> <br/> This upscale seafood restaurant is more than just a dining 
+          excellence: &quot;Amour de Mer.&quot; <br/> <br/> This upscale seafood restaurant is more than just a dining 
           establishment; it is a sanctuary for lovers, a place where the symphony of ocean waves 
           meets the artistry of gastronomy.
           </h3>

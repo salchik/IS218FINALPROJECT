@@ -28,7 +28,7 @@ export default function Reservation() {
                     </h1>
                     <p>
                         Receive intimate details about our seasonal menus and limited-time culinary delights.
-                        Not to mention gain early reservations for our enchanting themed dinners and intimate couple's events.
+                        Not to mention gain early reservations for our enchanting themed dinners and intimate couple&apos;s events.
                     </p>
                     <SignUpInput />
                 </div>
