@@ -8,7 +8,7 @@ export default function Reservation() {
             <RestNav />
             <div className="relative w-full">
                 <div className='align-middle justify-center' style={{
-                    backgroundImage: `url("/reserveImage.svg")`,
+                    backgroundImage: `url("/signUpImage.svg")`,
                     backgroundSize: 'cover',
                     backgroundPositionY: '70%',
                     paddingBottom: '700px',
