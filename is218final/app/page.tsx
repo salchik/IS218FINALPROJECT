@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className='min-w-full min-h-full'>
       <RestNav />
-      <div className='relative'>
-        <div className='align-middle justify-center' style={{
+      <div data-testid='heroContainer' className='relative'>
+        <div data-testid='heroImage' className='align-middle justify-center' style={{
           backgroundImage: `url("/hero.svg")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
@@ -17,7 +17,7 @@ export default function Home() {
           opacity: '.3',
           zIndex: '-1'
         }} />
-        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
+        <div data-testid='heroImage' className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
           <h1 className='text-8xl font-playfair'>
             INDULGE IN CHILEAN FLAVORS
           </h1>
