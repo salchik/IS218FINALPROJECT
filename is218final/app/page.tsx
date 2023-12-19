@@ -8,16 +8,14 @@ export default function Home() {
     <div className='min-w-full min-h-full'>
       <RestNav />
       <div data-testid='heroContainer' className='relative'>
-        <div data-testid='heroImage' rel='preload' className='align-middle justify-center' style={{
-          backgroundImage: `url("/hero.webp")`,
-          backgroundSize: 'cover',
-          backgroundPositionY: '90%',
-          paddingBottom: '600px',
-          width: '100%',
+        <img data-testid='heroImage' alt='A family eating dinner'  src='/hero.webp' style={{
+          objectFit: 'cover',
+          imageRendering: 'pixelated',
           opacity: '.3',
+          height: '800px',
           zIndex: '-1'
         }} />
-        <div data-testid='heroImage' className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
+        <div className='flex flex-col overflow-visible w-11/12 px-32 z-10 absolute top-56'>
           <h1 className='text-8xl font-playfair'>
             INDULGE IN CHILEAN FLAVORS
           </h1>
@@ -32,16 +30,16 @@ export default function Home() {
       </div>
       <div className='w-full py-5' />
       <div className='w-full bg-white py-40 flex justify-center'>
-        <div className='text-black w-full flex flex-col text-center'>
+        <div className='text-center'>
           <h3 className=' font-roboto font-semibold text-buttonRed'>
             WORDS OF RAPTURE
           </h3>
-          <h1 className='text-6xl font-playfair w-3/4 mx-auto my-5'>
+          <h1 className='text-6xl font-playfair text-black w-3/4 mx-auto my-5'>
             RHAPSODIES FROM OUR BELOVED PATRONS
           </h1>
           <ul className='inline-flex justify-center mt-14'>
             <li className='w-1/4 mx-3'>
-              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+              <div className='bg-black py-10 px-14 h-full rounded-xl'>
                 <h4 className='font-roboto font-thin text-lg mb-4'>
                   “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
                 </h4>
@@ -51,7 +49,7 @@ export default function Home() {
               </div>
             </li>
             <li className='w-1/4 mx-3'>
-              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+              <div className='bg-black py-10 px-14 h-full rounded-xl'>
                 <h4 className='font-roboto font-thin text-lg mb-4'>
                   “WONDERFULLY DIVINE.”
                 </h4>
@@ -61,7 +59,7 @@ export default function Home() {
               </div>
             </li>
             <li className='w-1/4 mx-3'>
-              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+              <div className='bg-black py-10 px-14 h-full rounded-xl'>
                 <h4 className='font-roboto font-thin text-lg mb-4'>
                   “THE AMBIANCE INVITED THE FLAMES OF ROMANCE.”
                 </h4>
@@ -74,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       <div className='relative'>
-        <div className='align-middle justify-center' style={{
+        <div style={{
           backgroundImage: `url("/landingAbout.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '95%',
@@ -128,7 +126,7 @@ export default function Home() {
         </div>
       </div>
       <div className='relative'>
-        <div className='align-middle justify-center' style={{
+        <div style={{
           backgroundImage: `url("/landingSignUp.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
