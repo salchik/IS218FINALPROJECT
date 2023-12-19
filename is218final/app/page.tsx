@@ -8,14 +8,16 @@ export default function Home() {
     <div className='min-w-full min-h-full'>
       <RestNav />
       <div data-testid='heroContainer' className='relative'>
-        <img data-testid='heroImage' alt='A family eating dinner'  src='/hero.webp' style={{
-          objectFit: 'cover',
-          imageRendering: 'pixelated',
+        <div data-testid='heroImage'style={{
+          backgroundImage: `url("/hero.webp")`,
+          backgroundSize: 'cover',
+          backgroundPositionY: '90%',
+          height: '600px',
+          width: '100%',
           opacity: '.3',
-          height: '800px',
           zIndex: '-1'
         }} />
-        <div className='flex flex-col overflow-visible w-11/12 px-32 z-10 absolute top-56'>
+        <div className='flex flex-col overflow-visible w-11/12 px-32 z-10 absolute top-16'>
           <h1 className='text-8xl font-playfair'>
             INDULGE IN CHILEAN FLAVORS
           </h1>
@@ -126,7 +128,7 @@ export default function Home() {
         </div>
       </div>
       <div className='relative'>
-        <div style={{
+        <div className='align-middle justify-center' style={{
           backgroundImage: `url("/landingSignUp.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
