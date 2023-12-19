@@ -97,7 +97,7 @@ export default function Home() {
           meets the artistry of gastronomy.
           </h3>
           <Button color='secondary' className=' w-3/12 text-2xl mt-2 font-roboto font-light bg-black py-7 rounded-lg'>
-            Learn More
+            <Link href={'/about'}>LEARN MORE</Link>
           </Button>
         </div>
       </div>
