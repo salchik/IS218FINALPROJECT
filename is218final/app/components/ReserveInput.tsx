@@ -2,9 +2,8 @@
 import { Button, Input } from '@nextui-org/react'
 import { ChangeEvent, useState } from 'react'
 
-const mailchimpFactory = require("@mailchimp/mailchimp_transactional/src/index.js");
-const mailchimp = mailchimpFactory("md-uqClTbx6RKt6LBmhLwiBRg");
-
+const MANDRIL_API = process.env.NEXT_PUBLIC_MANDRIL_API_KEY;
+const mailchimp = require('@mailchimp/mailchimp_transactional')(`${MANDRIL_API}`);
 
 export default function ReserveInput() {
     const [formData, setFormData] = useState({
@@ -25,7 +24,7 @@ export default function ReserveInput() {
             
             from_email: "sc399@njit.edu",
             subject: "Reservation",
-            text: "Hello " + formData.firstName + " " + formData.lastName + " your reservation is set for " + formData.guestNum,
+            text: "Hello " + formData.firstName + " " + formData.lastName + "! Your reservation is set for " + formData.guestNum,
             to: [
               {
                 email: formData.email,
@@ -37,25 +36,11 @@ export default function ReserveInput() {
             const response = await mailchimp.messages.send({
                 message
             });
-            console.log(response.message)
+           console.log(response.status)
         }
         catch (e) {
             console.log(e)
         }
-
-        // const res = fetch('/api',
-        //     {
-        //         body: JSON.stringify({
-        //             //inputRef.current.value
-        //             'input_email': testData
-        //         }),
-
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-
-        //         method: 'POST',
-        //     });
     };
     return (
         <div className="w-2/4 mt-10">

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_transactional": "^1.0.50",
     "@nextui-org/react": "^2.2.9",
     "framer-motion": "^10.16.16",
     "next": "14.0.3",
@@ -16,6 +17,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/mailchimp__mailchimp_transactional": "^1.0.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

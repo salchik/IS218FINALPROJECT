@@ -24,10 +24,10 @@ export default function RestFooter() {
           </Navbar>
           <div className='flex justify-center gap-10 pb-10'>
             <a href='http://www.facebook.com'>
-                <Image src='/facebookIcon.svg' width={50}/>
+                <Image src='/facebookIcon.svg' alt='facebook logo' width={50}/>
             </a>
             <a href='http://www.instagram.com'>
-                <Image src='/instagramIcon.svg' width={50}/>
+                <Image src='/instagramIcon.svg' alt='instagram logo'width={50}/>
             </a>
           </div>
       </footer>

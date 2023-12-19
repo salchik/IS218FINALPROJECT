@@ -4,9 +4,7 @@ import { ChangeEvent, useState } from 'react'
 
 export default function ReserveInput() {
     const [formData, setFormData] = useState({
-        email: '',
-        firstName: '',
-        lastName: ''
+        email: ''
     });
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name , value } = e.currentTarget;
@@ -28,7 +26,7 @@ export default function ReserveInput() {
 
                 method: 'POST',
             });
-        console.log((await res).status)
+        console.log((await res).statusText)
     };
     return (
         <div className="w-2/4 mt-10">

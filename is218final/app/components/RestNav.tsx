@@ -7,12 +7,12 @@ export default function RestNav() {
         <Navbar className='w-full p-10 bg-black'>
             <NavbarContent>
               <NavbarBrand>
-              <Link color='secondary' href={'/'}>AMOUR DE MER</Link>
+              <Link data-id='homeButton' color='secondary' href={'/'}>AMOUR DE MER</Link>
               </NavbarBrand>
             </NavbarContent>
             <NavbarContent className='gap-10' justify='end'>
               <NavbarItem>
-                <Link color='secondary' href={'/about'}>ABOUT</Link>
+                <Link data-id='aboutNav' color='secondary' href={'/about'}>ABOUT</Link>
               </NavbarItem>
               <NavbarItem>
                 <Link color='secondary' href={'/menu'}>MENU</Link>

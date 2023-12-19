@@ -7,17 +7,17 @@ export default function Home() {
   return (
     <div className='min-w-full min-h-full'>
       <RestNav />
-      <div className='relative'>
-        <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/hero.svg")`,
+      <div data-testid='heroContainer' className='relative'>
+        <div data-testid='heroImage'style={{
+          backgroundImage: `url("/hero.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
-          paddingBottom: '600px',
+          height: '600px',
           width: '100%',
           opacity: '.3',
           zIndex: '-1'
         }} />
-        <div className='flex flex-col overflow-visible w-11/12 px-32 py-16 z-10 absolute top-16'>
+        <div className='flex flex-col overflow-visible w-11/12 px-32 z-10 absolute top-16'>
           <h1 className='text-8xl font-playfair'>
             INDULGE IN CHILEAN FLAVORS
           </h1>
@@ -32,16 +32,16 @@ export default function Home() {
       </div>
       <div className='w-full py-5' />
       <div className='w-full bg-white py-40 flex justify-center'>
-        <div className='text-black w-full flex flex-col text-center'>
+        <div className='text-center'>
           <h3 className=' font-roboto font-semibold text-buttonRed'>
             WORDS OF RAPTURE
           </h3>
-          <h1 className='text-6xl font-playfair w-3/4 mx-auto my-5'>
+          <h1 className='text-6xl font-playfair text-black w-3/4 mx-auto my-5'>
             RHAPSODIES FROM OUR BELOVED PATRONS
           </h1>
           <ul className='inline-flex justify-center mt-14'>
             <li className='w-1/4 mx-3'>
-              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+              <div className='bg-black py-10 px-14 h-full rounded-xl'>
                 <h4 className='font-roboto font-thin text-lg mb-4'>
                   “SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”
                 </h4>
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </li>
             <li className='w-1/4 mx-3'>
-              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+              <div className='bg-black py-10 px-14 h-full rounded-xl'>
                 <h4 className='font-roboto font-thin text-lg mb-4'>
                   “WONDERFULLY DIVINE.”
                 </h4>
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </li>
             <li className='w-1/4 mx-3'>
-              <div className='bg-black text-white py-10 px-14 h-full rounded-xl'>
+              <div className='bg-black py-10 px-14 h-full rounded-xl'>
                 <h4 className='font-roboto font-thin text-lg mb-4'>
                   “THE AMBIANCE INVITED THE FLAMES OF ROMANCE.”
                 </h4>
@@ -74,8 +74,8 @@ export default function Home() {
         </div>
       </div>
       <div className='relative'>
-        <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/landingAbout.svg")`,
+        <div style={{
+          backgroundImage: `url("/landingAbout.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '95%',
           paddingBottom: '700px',
@@ -92,12 +92,12 @@ export default function Home() {
           </h1>
           <h3 className='font-roboto font-light text-xl w-10/12 my-10'>
           In the heart of a bustling coastal town stands an exquisite testament to love and culinary 
-          excellence: "Amour de Mer." <br/> <br/> This upscale seafood restaurant is more than just a dining 
+          excellence: &quot;Amour de Mer.&quot; <br/> <br/> This upscale seafood restaurant is more than just a dining 
           establishment; it is a sanctuary for lovers, a place where the symphony of ocean waves 
           meets the artistry of gastronomy.
           </h3>
           <Button color='secondary' className=' w-3/12 text-2xl mt-2 font-roboto font-light bg-black py-7 rounded-lg'>
-            <Link href={'/about'}>LEARN MORE</Link>
+            <Link color='secondary' href={'/about'}>LEARN MORE</Link>
           </Button>
         </div>
       </div>
@@ -108,16 +108,16 @@ export default function Home() {
           </h1>
           <div className='flex gap-3 align-middle w-full'>
            <div className = 'w-11/12 py-44 rounded-xl' style={{
-            backgroundImage: `url("/landingMenu1.svg")`,
+            backgroundImage: `url("/landingMenu1.webp")`,
             backgroundSize: 'cover',
             backgroundPositionX: '50%'
            }}/>
            <div className = 'w-11/12 py-44 rounded-xl' style={{
-            backgroundImage: `url("/landingMenu2.svg")`,
+            backgroundImage: `url("/landingMenu2.webp")`,
             backgroundSize: 'cover'
            }}/>
             <div className = 'w-11/12 py-44 rounded-xl' style={{
-            backgroundImage: `url("/landingMenu3.svg")`,
+            backgroundImage: `url("/landingMenu3.webp")`,
             backgroundSize: 'cover',
             backgroundPositionY: '30%'
            }}/>
@@ -129,7 +129,7 @@ export default function Home() {
       </div>
       <div className='relative'>
         <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/landingSignUp.svg")`,
+          backgroundImage: `url("/landingSignUp.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
           paddingBottom: '700px',
@@ -145,7 +145,7 @@ export default function Home() {
             Unlock exclusive offers and savored moments
           </h3>
           <Button color='secondary' className=' w-4/12 text-2xl font-roboto bg-transparent border-small border-white py-10 rounded'>
-            <Link color='secondary' href={'/signUp'}>SIGN UP</Link>
+            <Link title='signUp' color='secondary' href={'/signUp'}>SIGN UP</Link>
           </Button>
         </div>
       </div>
@@ -154,7 +154,7 @@ export default function Home() {
           <h1 className='text-6xl font-playfair mb-16'>LOCATIONS &amp; HOURS</h1>
           <div className='flex flex-wrap'>
             <div className = 'w-1/2 py-60 rounded-xl' style={{
-              backgroundImage: `url("/landingMap.png")`,
+              backgroundImage: `url("/landingMap.webp")`,
               backgroundSize: 'cover',
               backgroundPositionX: '50%'
             }}/>
