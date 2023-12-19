@@ -24,7 +24,7 @@ export default function ReserveInput() {
             
             from_email: "sc399@njit.edu",
             subject: "Reservation",
-            text: "Hello " + formData.firstName + " " + formData.lastName + " your reservation is set for " + formData.guestNum,
+            text: "Hello " + formData.firstName + " " + formData.lastName + "! Your reservation is set for " + formData.guestNum,
             to: [
               {
                 email: formData.email,
