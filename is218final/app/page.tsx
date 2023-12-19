@@ -8,8 +8,8 @@ export default function Home() {
     <div className='min-w-full min-h-full'>
       <RestNav />
       <div data-testid='heroContainer' className='relative'>
-        <div data-testid='heroImage' className='align-middle justify-center' style={{
-          backgroundImage: `url("/hero.svg")`,
+        <div data-testid='heroImage' rel='preload' className='align-middle justify-center' style={{
+          backgroundImage: `url("/hero.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
           paddingBottom: '600px',
@@ -75,7 +75,7 @@ export default function Home() {
       </div>
       <div className='relative'>
         <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/landingAbout.svg")`,
+          backgroundImage: `url("/landingAbout.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '95%',
           paddingBottom: '700px',
@@ -108,16 +108,16 @@ export default function Home() {
           </h1>
           <div className='flex gap-3 align-middle w-full'>
            <div className = 'w-11/12 py-44 rounded-xl' style={{
-            backgroundImage: `url("/landingMenu1.svg")`,
+            backgroundImage: `url("/landingMenu1.webp")`,
             backgroundSize: 'cover',
             backgroundPositionX: '50%'
            }}/>
            <div className = 'w-11/12 py-44 rounded-xl' style={{
-            backgroundImage: `url("/landingMenu2.svg")`,
+            backgroundImage: `url("/landingMenu2.webp")`,
             backgroundSize: 'cover'
            }}/>
             <div className = 'w-11/12 py-44 rounded-xl' style={{
-            backgroundImage: `url("/landingMenu3.svg")`,
+            backgroundImage: `url("/landingMenu3.webp")`,
             backgroundSize: 'cover',
             backgroundPositionY: '30%'
            }}/>
@@ -129,7 +129,7 @@ export default function Home() {
       </div>
       <div className='relative'>
         <div className='align-middle justify-center' style={{
-          backgroundImage: `url("/landingSignUp.svg")`,
+          backgroundImage: `url("/landingSignUp.webp")`,
           backgroundSize: 'cover',
           backgroundPositionY: '90%',
           paddingBottom: '700px',
@@ -154,7 +154,7 @@ export default function Home() {
           <h1 className='text-6xl font-playfair mb-16'>LOCATIONS &amp; HOURS</h1>
           <div className='flex flex-wrap'>
             <div className = 'w-1/2 py-60 rounded-xl' style={{
-              backgroundImage: `url("/landingMap.png")`,
+              backgroundImage: `url("/landingMap.webp")`,
               backgroundSize: 'cover',
               backgroundPositionX: '50%'
             }}/>

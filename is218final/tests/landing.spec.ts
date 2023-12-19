@@ -64,10 +64,10 @@ test('testiText', async ({ page }) => {
     "“SANCTUARY WHERE LOVE AND SEAFOOD COMBINE.”PIERRE & CHERYL"
   );
   await expect(page.getByText('“WONDERFULLY DIVINE.”STEVE &')).toHaveText(
-    "“WONDERFULLY DIVINE.” STEVE &amp; JERMAINE"
+    "“WONDERFULLY DIVINE.”STEVE & JERMAINE"
   );
   await expect(page.getByText('“THE AMBIANCE INVITED THE FLAMES OF ROMANCE.”SARAH & JAMES')).toHaveText(
-    "“THE AMBIANCE INVITED THE FLAMES OF ROMANCE.” SARAH &amp; JAMES"
+    "“THE AMBIANCE INVITED THE FLAMES OF ROMANCE.”SARAH & JAMES"
   );
 });
 
@@ -94,7 +94,7 @@ test('signUpText', async ({ page }) => {
 
 test('mapText', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'LOCATIONS & HOURS' })).toHaveText(
-    "LOCATIONS HOURS"
+    "LOCATIONS & HOURS"
   );
   await expect(page.getByRole('heading', { name: 'ATLANTIC CITY' })).toHaveText(
     "ATLANTIC CITY"
